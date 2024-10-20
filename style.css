@@ -52,3 +52,18 @@
         background-color: rgb(196, 190, 190);
     }
 }
+
+table{
+    width: 100%;
+}
+
+/* .tr{
+    display: block;
+} */
+
+.td{
+    display: flex;
+
+    
+
+}
