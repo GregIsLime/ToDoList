@@ -57,13 +57,17 @@ table{
     width: 100%;
 }
 
-/* .tr{
-    display: block;
-} */
-
-.td{
+tr{
     display: flex;
+    flex-wrap: wrap;
+}
 
-    
+td{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 
+    p{
+        font-size: 50px;
+    }
 }
