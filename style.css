@@ -37,6 +37,9 @@
     input {
         width: 50%;
         height: 50px;
+        font-size: 50px;
+
+       
     }
 
     .button {
