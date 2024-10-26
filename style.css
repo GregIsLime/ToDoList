@@ -6,7 +6,7 @@
 
 .header-container {
     background-color: orange;
-    height: 50vh;
+    height:30vh;
     min-height: 150px;
     width: 100vw;
     display: flex;
