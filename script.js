@@ -8,15 +8,24 @@ button.addEventListener("click", () => {
         let tr = document.querySelector("tr")
         let td = document.createElement("td")
         let p = document.createElement("p")
-       
-        p.innerText = getContent
+        p.innerText =getContent
+
+        let p2 = document.createElement("p")
+        p2.className = "dataNow"
+        let dataNow= new Date
+        p2.innerText =dataNow.toDateString()+"\n"+dataNow.toLocaleTimeString()
+
+        let p3 = document.createElement("p")
+        p3.className = "rank"
+        p3.innerText = "A"
+
         let div = document.createElement("div")
         div.className = "close-task"
-        div.innerText = "Close"
+        div.innerText = "X"
         div.addEventListener("click", () => {
             div.parentElement.remove()
         })
-        td.append(p, div)
+        td.append(p,p2,p3,div)
         tr.append(td)
 
 

@@ -6,11 +6,12 @@
 
 .header-container {
     background-color: orange;
-    height: 30vh;
+    height: 50vh;
     min-height: 150px;
     width: 100vw;
     display: flex;
     justify-content: center;
+
 }
 
 .header-items {
@@ -19,6 +20,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-content: center;
 
     p {
         font-size: 50px;
@@ -32,7 +34,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 50%;
+    height: 30%;
 
     input {
         width: 50%;
@@ -73,19 +75,40 @@ td {
     justify-content: space-between;
     border: 1px black solid;
     margin: 5px;
+    align-items: center;
 
 
     p {
         font-size: 50px;
-        width: 90%;
+        width: 60%;
         
     }
+
+    .dataNow{
+        font-size: 15px;
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rank{
+        color:red;
+        font-size: 20px;
+        width: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+ 
 
     div {
         height: 80%;
         width: 10%;
         border: 1px black solid;
-        margin: 5px 20px 5px;
+        margin-right: 5px;
         border-radius: 35px;
         display: flex;
         justify-content: center;
@@ -97,4 +120,55 @@ td {
     div:hover {
         background-color: aquamarine;
     }
+}
+
+.filter-bar-container{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    /* border: 1px black solid; */
+    margin: 0px 6.5px 0px 6.5px;
+}
+
+.filter-name{
+    width: 60%;
+    text-align: center;
+}
+
+.filter-data{
+    width: 15%;
+    text-align: center;
+    
+}
+
+.filter-rank{
+    width: 5%; 
+    text-align: center;
+}
+
+.filter-empty{
+    width: 10%; 
+    text-align: center;
+}
+
+.radio-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-radio{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+legend{
+    text-align: center;
+}
+
+.radio-button{
+    width: 20%;
+    text-align: center;
 }
