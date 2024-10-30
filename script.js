@@ -21,6 +21,7 @@ button.addEventListener("click", () => {
         document.querySelector(".inputTask").value = ""
         let tr = document.querySelector("tr")
         let td = document.createElement("td")
+        td.className = "td-block"
         let p = document.createElement("p")
         p.innerText = getContent
         let p2 = document.createElement("p")
@@ -65,6 +66,13 @@ function radioChecks(radios, p3) {
     return "";
 }
 
+// filter-name
+let dataName=document.querySelector(".icon-name")
+
+dataName.addEventListener("click",()=>{
+   let blocks=document.getElementsByTagName("td")
+   console.log(blocks.childNodes[0].sort())
+})
 
 
 
