@@ -82,8 +82,8 @@ header {
 main {
     background-color: aqua;
     width: 100%;
-    height: calc( 100vh - 200px );
-    border-radius: 35px;
+    min-height: calc( 100vh - 200px );
+    border-radius: 25px;
     position: absolute;
     top: 170px;
     z-index: 50;
