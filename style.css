@@ -124,9 +124,10 @@ td {
 
 
     p {
-        font-size: 50px;
+        font-size: 45px;
         width: 60%;
-        word-break: break-all
+        word-break: break-all;
+        font-family: "Mouse";
 
     }
 
@@ -170,7 +171,7 @@ td {
 
 td:hover {
     background-color: rgb(187, 231, 216);
-    transform: scale(1.01);
+    transform: scale(1.005);
 }
 
 .filter-bar-container {
