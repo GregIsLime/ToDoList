@@ -73,15 +73,13 @@ dataName.addEventListener("click", () => {
     const arr = Array.from(blocks)
     arr.forEach((element) =>
         sortedBlocks.push(element.firstChild.innerText))
-
-    if(!dataNameIsActive)
-    {sortedBlocks.sort()
-        dataNameIsActive=true
-    } else{
+    if (!dataNameIsActive) {
+        sortedBlocks.sort()
+        dataNameIsActive = true
+    } else {
         sortedBlocks.reverse()
-        dataNameIsActive=false
+        dataNameIsActive = false
     }
-
     for (let i = 0; i < blocks.length; i++) {
         for (let z = 0; z < blocks.length; z++) {
             if (sortedBlocks[i] === arr[z].firstChild.innerText) {
@@ -90,6 +88,5 @@ dataName.addEventListener("click", () => {
             }
         }
     }
-
 }
 )
