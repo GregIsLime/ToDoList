@@ -6,9 +6,9 @@ let radios = document.querySelectorAll('[type="checkbox"]')
 radios.forEach(element => {
     element.addEventListener("click", (el) => {
         radios.forEach((element) => {
-            if(element===event.target){
-            } else{
-            element.checked = false
+            if (element === event.target) {
+            } else {
+                element.checked = false
             }
         })
     })
@@ -56,25 +56,40 @@ function radioChecks(radios, p3) {
     })
     if (resalt.value == "A") {
         p3.style = "color:red;"
-        console.log("red")
         return resalt.value;
     } else if (resalt.value == "B" || resalt.value == "C") {
         p3.style = "color:black;"
-        console.log("balack")
         return resalt.value;
     }
-    return "";
+    return ""
 }
 
 // filter-name
-let dataName=document.querySelector(".icon-name")
+let dataName = document.querySelector(".icon-name")
+let dataNameIsActive = false
+dataName.addEventListener("click", () => {
+    const blocks = document.getElementsByTagName("td")
+    let sortedBlocks = []
+    const arr = Array.from(blocks)
+    arr.forEach((element) =>
+        sortedBlocks.push(element.firstChild.innerText))
 
-dataName.addEventListener("click",()=>{
-   let blocks=document.getElementsByTagName("td")
-   console.log(blocks.childNodes[0].sort())
-})
+    if(!dataNameIsActive)
+    {sortedBlocks.sort()
+        dataNameIsActive=true
+    } else{
+        sortedBlocks.reverse()
+        dataNameIsActive=false
+    }
 
+    for (let i = 0; i < blocks.length; i++) {
+        for (let z = 0; z < blocks.length; z++) {
+            if (sortedBlocks[i] === arr[z].firstChild.innerText) {
+                document.getElementsByTagName("tr")[0].append(arr[z])
+                break
+            }
+        }
+    }
 
-
-
-
+}
+)
